@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="620" viewBox="0 0 1360 620"><rect width="1360" height="620" fill="#fff"/><text x="680" y="35" text-anchor="middle" font-size="22" font-weight="bold" font-family="Arial">Simple Notes Management System - UML Class Diagram</text><rect x="420" y="60" width="340" height="274" fill="#fff" stroke="#222" stroke-width="2"/>
+<rect x="420" y="60" width="340" height="34" fill="#dbe9ff" stroke="#222" stroke-width="2"/>
+<text x="590.0" y="83" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">User</text>
+<line x1="420" y1="258" x2="760" y2="258" stroke="#222" stroke-width="2"/>
+<text x="430" y="112" font-size="13" font-family="monospace">+ id: number</text>
+<text x="430" y="134" font-size="13" font-family="monospace">+ name: string</text>
+<text x="430" y="156" font-size="13" font-family="monospace">+ email: string</text>
+<text x="430" y="178" font-size="13" font-family="monospace">- password: string</text>
+<text x="430" y="200" font-size="13" font-family="monospace"># phone: string</text>
+<text x="430" y="222" font-size="13" font-family="monospace"># age: number</text>
+<text x="430" y="244" font-size="13" font-family="monospace"># notebooks: NoteBook[]</text>
+<text x="430" y="276" font-size="13" font-family="monospace">+ addNotebook(notebook: NoteBook): void</text>
+<text x="430" y="298" font-size="13" font-family="monospace">+ getNotebooks(): NoteBook[]</text>
+<text x="430" y="320" font-size="13" font-family="monospace">+ displayInfo(): void</text>
+<rect x="900" y="60" width="420" height="186" fill="#fff" stroke="#222" stroke-width="2"/>
+<rect x="900" y="60" width="420" height="34" fill="#dbe9ff" stroke="#222" stroke-width="2"/>
+<text x="1110.0" y="83" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">NoteBook</text>
+<line x1="900" y1="170" x2="1320" y2="170" stroke="#222" stroke-width="2"/>
+<text x="910" y="112" font-size="13" font-family="monospace">+ id: number</text>
+<text x="910" y="134" font-size="13" font-family="monospace">+ name: string</text>
+<text x="910" y="156" font-size="13" font-family="monospace">- notes: Note[]</text>
+<text x="910" y="188" font-size="13" font-family="monospace">+ addNote(id, title, content, author): Note</text>
+<text x="910" y="210" font-size="13" font-family="monospace">+ removeNote(id: number): void</text>
+<text x="910" y="232" font-size="13" font-family="monospace">+ getNotes(): Note[]</text>
+<rect x="900" y="400" width="420" height="164" fill="#fff" stroke="#222" stroke-width="2"/>
+<rect x="900" y="400" width="420" height="34" fill="#dbe9ff" stroke="#222" stroke-width="2"/>
+<text x="1110.0" y="423" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Note</text>
+<line x1="900" y1="532" x2="1320" y2="532" stroke="#222" stroke-width="2"/>
+<text x="910" y="452" font-size="13" font-family="monospace">+ id: number</text>
+<text x="910" y="474" font-size="13" font-family="monospace">+ title: string</text>
+<text x="910" y="496" font-size="13" font-family="monospace">+ content: string</text>
+<text x="910" y="518" font-size="13" font-family="monospace">+ userId: User</text>
+<text x="910" y="550" font-size="13" font-family="monospace">+ preview(): string</text>
+<rect x="330" y="430" width="520" height="98" fill="#fff" stroke="#222" stroke-width="2"/>
+<rect x="330" y="430" width="520" height="34" fill="#dbe9ff" stroke="#222" stroke-width="2"/>
+<text x="590.0" y="453" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Admin</text>
+<line x1="330" y1="496" x2="850" y2="496" stroke="#222" stroke-width="2"/>
+<text x="340" y="514" font-size="13" font-family="monospace">+ manageNotes(notebook: NoteBook, removeNoteId?: number): void</text>
+<rect x="40" y="60" width="300" height="142" fill="#fff" stroke="#222" stroke-width="2"/>
+<rect x="40" y="60" width="300" height="34" fill="#dbe9ff" stroke="#222" stroke-width="2"/>
+<text x="190.0" y="83" text-anchor="middle" font-size="17" font-weight="bold" font-family="Arial">Storage&lt;T&gt;</text>
+<line x1="40" y1="126" x2="340" y2="126" stroke="#222" stroke-width="2"/>
+<text x="50" y="112" font-size="13" font-family="monospace">- items: T[]</text>
+<text x="50" y="144" font-size="13" font-family="monospace">+ addItem(item: T): void</text>
+<text x="50" y="166" font-size="13" font-family="monospace">+ removeItem(item: T): void</text>
+<text x="50" y="188" font-size="13" font-family="monospace">+ getAllItems(): T[]</text>
+<polygon points="590,334 579,354 601,354" fill="#fff" stroke="#222" stroke-width="2"/>
+<line x1="590" y1="354" x2="590" y2="430" stroke="#222" stroke-width="2"/>
+<text x="600" y="386.0" font-size="12" text-anchor="start" font-family="Arial">extends (Inheritance)</text>
+<polygon points="760,110 776,102 792,110 776,118" fill="#fff" stroke="#222" stroke-width="2"/>
+<line x1="792" y1="110" x2="900" y2="110" stroke="#222" stroke-width="2"/>
+<text x="765" y="98" font-size="12" text-anchor="start" font-family="Arial">1</text>
+<text x="880" y="98" font-size="12" text-anchor="start" font-family="Arial">*</text>
+<text x="846" y="128" font-size="12" text-anchor="middle" font-family="Arial">owns</text>
+<polygon points="1110,246 1102,262 1110,278 1118,262" fill="#222" stroke="#222" stroke-width="2"/>
+<line x1="1110" y1="278" x2="1110" y2="400" stroke="#222" stroke-width="2"/>
+<text x="1120" y="296" font-size="12" text-anchor="start" font-family="Arial">1</text>
+<text x="1120" y="390" font-size="12" text-anchor="start" font-family="Arial">*</text>
+<text x="1125" y="339.0" font-size="12" text-anchor="start" font-family="Arial">contains (Composition)</text>
+<line x1="900" y1="470" x2="760" y2="230" stroke="#222" stroke-width="2"/>
+<polyline points="773,238.6 760,230 761,245.6" fill="none" stroke="#222" stroke-width="2"/>
+<text x="845" y="340" font-size="12" text-anchor="start" font-family="Arial">author (Association)</text>
+<text x="770" y="214" font-size="12" text-anchor="start" font-family="Arial">1</text>
+<text x="882" y="492" font-size="12" text-anchor="start" font-family="Arial">*</text>
+<g transform="translate(0,-75)">
+<rect x="40" y="300" width="300" height="150" fill="#fafafa" stroke="#888"/>
+<text x="50" y="322" font-size="14" text-anchor="start" font-family="Arial" font-weight="bold">Legend</text>
+<polygon points="60,345 52,355 68,355" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="80" y="355" font-size="12" text-anchor="start" font-family="Arial">Inheritance (Admin extends User)</text>
+<polygon points="52,380 60,372 68,380 60,388" fill="#222" stroke="#222" stroke-width="2"/>
+<text x="80" y="384" font-size="12" text-anchor="start" font-family="Arial">Composition (NoteBook - Note)</text>
+<polygon points="52,408 60,400 68,408 60,416" fill="#fff" stroke="#222" stroke-width="2"/>
+<text x="80" y="412" font-size="12" text-anchor="start" font-family="Arial">Aggregation (User - NoteBook)</text>
+<line x1="52" y1="436" x2="68" y2="436" stroke="#222" stroke-width="2"/>
+<polyline points="62,430 68,436 62,442" fill="none" stroke="#222" stroke-width="2"/>
+<text x="80" y="440" font-size="12" text-anchor="start" font-family="Arial">Association (Note - User)</text>
+</g></svg>

@@ -1,0 +1,11 @@
+{
+  "name": "notes-management-system",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
